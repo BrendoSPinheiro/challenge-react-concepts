@@ -33,7 +33,7 @@ export function TaskList() {
     const updatedTasks = tasks.map(task => (
       task.id === id ? {
         ...task,
-        isComplete: task.isComplete ? false : true
+        isComplete: !task.isComplete
       }
         : task
     ));
